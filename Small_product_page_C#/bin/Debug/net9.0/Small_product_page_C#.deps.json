@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Small_product_page_C#/1.0.0": {
+        "runtime": {
+          "Small_product_page_C#.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Small_product_page_C#/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
