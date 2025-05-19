@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_C#\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E473350F-DE95-40AA-967B-191F113E7072}|Small_product_page_C#\\Small_product_page_C#.csproj|c:\\users\\markuss\\source\\repos\\small_product_page_c#\\small_product_page_c#\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E473350F-DE95-40AA-967B-191F113E7072}|Small_product_page_C#\\Small_product_page_C#.csproj|solutionrelative:small_product_page_c#\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E473350F-DE95-40AA-967B-191F113E7072}|Small_product_page_C#\\Small_product_page_C#.csproj|c:\\users\\markuss\\source\\repos\\small_product_page_c#\\small_product_page_c#\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E473350F-DE95-40AA-967B-191F113E7072}|Small_product_page_C#\\Small_product_page_C#.csproj|solutionrelative:small_product_page_c#\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E473350F-DE95-40AA-967B-191F113E7072}|Small_product_page_C#\\Small_product_page_C#.csproj|c:\\users\\markuss\\source\\repos\\small_product_page_c#\\small_product_page_c#\\viewmodels\\addproductviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E473350F-DE95-40AA-967B-191F113E7072}|Small_product_page_C#\\Small_product_page_C#.csproj|solutionrelative:small_product_page_c#\\viewmodels\\addproductviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_C#\\Small_product_page_C#\\Views\\Product\\Add.cshtml",
+              "RelativeDocumentMoniker": "Small_product_page_C#\\Views\\Product\\Add.cshtml",
+              "ToolTip": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_C#\\Small_product_page_C#\\Views\\Product\\Add.cshtml",
+              "RelativeToolTip": "Small_product_page_C#\\Views\\Product\\Add.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvykAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T12:27:28.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddProductViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_C#\\Small_product_page_C#\\ViewModels\\AddProductViewModels.cs",
+              "RelativeDocumentMoniker": "Small_product_page_C#\\ViewModels\\AddProductViewModels.cs",
+              "ToolTip": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_C#\\Small_product_page_C#\\ViewModels\\AddProductViewModels.cs",
+              "RelativeToolTip": "Small_product_page_C#\\ViewModels\\AddProductViewModels.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T12:00:20.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_C#\\Small_product_page_C#\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Small_product_page_C#\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_C#\\Small_product_page_C#\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Small_product_page_C#\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAACYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T11:55:19.619Z",
+              "EditorCaption": ""
             }
           ]
         }
