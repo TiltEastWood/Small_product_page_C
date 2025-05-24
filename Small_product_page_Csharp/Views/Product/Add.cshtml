@@ -1,0 +1,44 @@
+﻿@model Small_product_page_C_.ViewModels.AddProductViewModels
+<form asp-action="Add" method="post">
+    <div>
+        <label>SKU</label>
+        <input asp-for="Sku" />
+    </div>
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Price</label>
+        <input asp-for="Price" />
+    </div>
+    <div>
+        <label>Product Type</label>
+        <select asp-for="ProductType" asp-items="Html.GetEnumSelectList<ProductType>()"></select>
+    </div>
+
+    <div>
+        <label>Height</label>
+        <input asp-for="Height" />
+        <label>Width</label>
+        <input asp-for="Width" />
+        <label>Lenght</label>
+        <input asp-for=Lenght />
+    </div>
+
+    <div>
+        <label>Weight</label>
+        <input asp-for="Weight" />
+    </div>
+
+    <div>
+        <label>Size (MB)</label>
+        <input asp-for="StorageMB" />
+    </div>
+
+    <button type="submit">Add Product</button>
+</form>
+<script>
+    //js for hiding and showing inputs after choosing type
+</script>
+
