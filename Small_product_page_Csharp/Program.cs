@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Small_product_page_C_.Data;
 
 namespace Small_product_page_C_
@@ -12,7 +13,7 @@ namespace Small_product_page_C_
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 

@@ -1,11 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Small_product_page_C_.Models;
 using Small_product_page_C_.ViewModels;
+using Small_product_page_C_.Data;
 
 namespace Small_product_page_C_.Controllers
 {
     public class ProductController : Controller
     {
+        private readonly AppDbContext _context;
+        public ProductController(AppDbContext context)
+        {
+            _context = context;
+        }
         public IActionResult Add()
         {
             return View();
@@ -13,12 +19,12 @@ namespace Small_product_page_C_.Controllers
         [HttpPost]
         public IActionResult Add(AddProductViewModels model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View(model);
             }
 
-            Product product;
+            Product product = null;
 
             switch (model.ProductType)
             {
@@ -53,7 +59,7 @@ namespace Small_product_page_C_.Controllers
                         ProductType = model.ProductType,
                         Height = model.Height ?? 0,
                         Width = model.Width ?? 0,
-                        Lenght = model.Lenght ?? 0
+                        Length = model.Length ?? 0
                     };
                     break;
 
@@ -63,7 +69,8 @@ namespace Small_product_page_C_.Controllers
             }
             if (product != null) 
             {
-                //Save to DB
+                _context.Products.Add(product);
+                _context.SaveChanges();
             }
 
             return RedirectToAction("Index");
