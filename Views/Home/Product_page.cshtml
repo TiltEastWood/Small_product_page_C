@@ -1,0 +1,22 @@
+﻿@page  
+@model Small_product_page_C_.ViewModels.ViewProducts
+
+<h2>Product Page</h2>
+<table>
+    <thread>
+        <tr>
+            <th>SKU</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thread>
+    <tbody>
+    @foreach (var product in Model.Products)
+    {
+        <tr>
+            <td>@product.Sku</td>
+            <td>@product.Name</td>
+            <td>@product.Price</td>
+        </tr>
+    }
+</table>

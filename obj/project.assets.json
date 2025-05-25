@@ -4877,11 +4877,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_Csharp\\Small_product_page_Csharp\\Small_product_page_Csharp.csproj",
+      "projectUniqueName": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_Csharp\\Small_product_page_Csharp.csproj",
       "projectName": "Small_product_page_Csharp",
-      "projectPath": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_Csharp\\Small_product_page_Csharp\\Small_product_page_Csharp.csproj",
+      "projectPath": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_Csharp\\Small_product_page_Csharp.csproj",
       "packagesPath": "C:\\Users\\Markuss\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_Csharp\\Small_product_page_Csharp\\obj\\",
+      "outputPath": "C:\\Users\\Markuss\\source\\repos\\Small_product_page_Csharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -2,6 +2,7 @@
 using Small_product_page_C_.Models;
 using Small_product_page_C_.ViewModels;
 using Small_product_page_C_.Data;
+using System.Linq;
 
 namespace Small_product_page_C_.Controllers
 {
@@ -15,6 +16,14 @@ namespace Small_product_page_C_.Controllers
         public IActionResult Add()
         {
             return View();
+        }
+        public IActionResult Product_page()
+        {
+            var model = new ViewProducts
+            {
+                Products = _context.Products.ToList()
+            };
+            return View(model);
         }
         [HttpPost]
         public IActionResult Add(AddProductViewModels model)
