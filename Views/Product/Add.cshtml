@@ -1,0 +1,68 @@
+﻿@model Small_product_page_C_.ViewModels.AddProductViewModels
+<form asp-action="Add" method="post">
+    <div>
+        <label>Product Type</label>
+        <select asp-for="ProductType" id="productType" asp-items="Html.GetEnumSelectList<ProductType>()"></select>
+    </div>
+    <div>
+        <label>Sku</label>
+        <input asp-for="Sku" id="sku" readonly />
+    </div>
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Price</label>
+        <input asp-for="Price" />
+    </div>
+    <div id="furnitureField" style="display:none;">
+        <label>Height</label>
+        <input asp-for="Height" />
+        <label>Width</label>
+        <input asp-for="Width" />
+        <label>Length</label>
+        <input asp-for="Length" />
+    </div>
+    <div id="bookField" style="display:none;">
+        <label>Weight</label>
+        <input asp-for="Weight" />
+    </div>
+    <div id="cdField" style="display:none;">
+        <label>Size (MB)</label>
+        <input asp-for="StorageMB" />
+    </div>
+    <button type="submit">Add Product</button>
+</form>
+<script>
+    function generateSku() {
+        var typeSelect = document.getElementById('productType');
+        var type = typeSelect.options[typeSelect.selectedIndex].text.trim();
+        var prefix = '';
+        switch(type){
+            case 'Book': prefix = 'GGWP'; break;
+            case 'CD': prefix = 'JVC'; break;
+            case 'Furniture': prefix = 'TR'; break;
+        }
+        var random = Math.floor(100000 + Math.random() * 900000);
+        document.getElementById('sku').value = prefix + random;
+    }
+
+    function toggleFields(){
+        var typeSelect = document.getElementById('productType');
+        var type = typeSelect.options[typeSelect.selectedIndex].text.trim();
+        document.getElementById('furnitureField').style.display = (type === 'Furniture') ? '' : 'none';
+        document.getElementById('bookField').style.display = (type === 'Book') ? '' : 'none';
+        document.getElementById('cdField').style.display = (type === 'CD') ? '' : 'none';
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+        generateSku();
+        toggleFields();
+        document.getElementById('productType').addEventListener('change', function() {
+            generateSku();
+            toggleFields();
+        });
+    });
+</script>
+
