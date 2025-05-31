@@ -13,7 +13,11 @@ namespace Small_product_page_C_
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(
+                    builder.Configuration.GetConnectionString("DefaultConnection"),
+                    sqlOptions => sqlOptions.EnableRetryOnFailure()
+                )
+            );
 
             var app = builder.Build();
 
@@ -33,7 +37,7 @@ namespace Small_product_page_C_
             app.MapStaticAssets();
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}")
+                pattern: "{controller=Product}/{action=Product_page}/{id?}")
                 .WithStaticAssets();
 
             app.Run();

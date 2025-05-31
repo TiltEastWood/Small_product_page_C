@@ -82,7 +82,7 @@ namespace Small_product_page_C_.Controllers
                 _context.SaveChanges();
             }
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Product_page");
         }
     }
 }
